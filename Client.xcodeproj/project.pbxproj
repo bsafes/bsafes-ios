@@ -844,7 +844,7 @@
 		F736E01B2390034B00A01A76 /* ReadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736E01A2390034B00A01A76 /* ReadList.swift */; };
 		F736E024239005A300A01A76 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736E023239005A300A01A76 /* ShareViewController.swift */; };
 		F736E027239005A300A01A76 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F736E025239005A300A01A76 /* MainInterface.storyboard */; };
-		F736E02B239005A300A01A76 /* ReadInPrivate.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F736E021239005A300A01A76 /* ReadInPrivate.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F736E02B239005A300A01A76 /* BSafes.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F736E021239005A300A01A76 /* BSafes.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F736E0312390072400A01A76 /* BraveShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE7688420B3456C00FF5533 /* BraveShared.framework */; };
 		F736E0322390072400A01A76 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1DC51320AC9AF900905E5A /* Data.framework */; };
 		F84B21DA1A090F8100AAB793 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B21D91A090F8100AAB793 /* ClientTests.swift */; };
@@ -1116,7 +1116,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F736E02B239005A300A01A76 /* ReadInPrivate.appex in Embed App Extensions */,
+				F736E02B239005A300A01A76 /* BSafes.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2234,7 +2234,7 @@
 		F35B8D2C1D6383E9008E3D61 /* SessionRestoreHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRestoreHelper.swift; sourceTree = "<group>"; };
 		F35B8D2E1D638408008E3D61 /* SessionRestoreHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRestoreHandler.swift; sourceTree = "<group>"; };
 		F736E01A2390034B00A01A76 /* ReadList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadList.swift; sourceTree = "<group>"; };
-		F736E021239005A300A01A76 /* ReadInPrivate.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReadInPrivate.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F736E021239005A300A01A76 /* BSafes.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BSafes.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F736E023239005A300A01A76 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		F736E026239005A300A01A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F736E028239005A300A01A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -4167,7 +4167,7 @@
 				5DE7688420B3456C00FF5533 /* BraveShared.framework */,
 				5DE7688C20B3456E00FF5533 /* BraveSharedTests.xctest */,
 				0A6231E32121F761007B429B /* UnitTests.xctest */,
-				F736E021239005A300A01A76 /* ReadInPrivate.appex */,
+				F736E021239005A300A01A76 /* BSafes.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4761,9 +4761,9 @@
 			productReference = E6F9650C1B2F1CF20034B023 /* SharedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F736E020239005A300A01A76 /* ReadInPrivate */ = {
+		F736E020239005A300A01A76 /* BSafes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F736E02C239005A300A01A76 /* Build configuration list for PBXNativeTarget "ReadInPrivate" */;
+			buildConfigurationList = F736E02C239005A300A01A76 /* Build configuration list for PBXNativeTarget "BSafes" */;
 			buildPhases = (
 				F736E01D239005A300A01A76 /* Sources */,
 				F736E01E239005A300A01A76 /* Frameworks */,
@@ -4773,9 +4773,9 @@
 			);
 			dependencies = (
 			);
-			name = ReadInPrivate;
+			name = BSafes;
 			productName = ReadInPrivate;
-			productReference = F736E021239005A300A01A76 /* ReadInPrivate.appex */;
+			productReference = F736E021239005A300A01A76 /* BSafes.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		F84B21BD1A090F8100AAB793 /* Client */ = {
@@ -4969,7 +4969,7 @@
 			projectRoot = "";
 			targets = (
 				F84B21BD1A090F8100AAB793 /* Client */,
-				F736E020239005A300A01A76 /* ReadInPrivate */,
+				F736E020239005A300A01A76 /* BSafes */,
 				5DE7688320B3456C00FF5533 /* BraveShared */,
 				288A2D851AB8B3260023ABC3 /* Shared */,
 				2FCAE2191ABB51F800877008 /* Storage */,
@@ -6161,7 +6161,7 @@
 		};
 		F736E02A239005A300A01A76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F736E020239005A300A01A76 /* ReadInPrivate */;
+			target = F736E020239005A300A01A76 /* BSafes */;
 			targetProxy = F736E029239005A300A01A76 /* PBXContainerItemProxy */;
 		};
 		F84B21D51A090F8100AAB793 /* PBXTargetDependency */ = {
@@ -8419,6 +8419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
@@ -8859,6 +8860,7 @@
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Client/Entitlements/FennecEnterpriseApplication.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
@@ -9302,11 +9304,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Beta;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Client/Entitlements/FirefoxBetaApplication.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
@@ -9505,6 +9508,7 @@
 				DEVELOPMENT_TEAM = 866K689WP3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -9526,11 +9530,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MOZ_BUNDLE_DISPLAY_NAME = BSafes;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = brave.syang.local.id.ReadInPrivate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BSafes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -9577,6 +9582,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -9595,7 +9601,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = brave.syang.local.id.ReadInPrivate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BSafes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -9643,6 +9649,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -9661,7 +9668,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = brave.syang.local.id.ReadInPrivate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BSafes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -9709,6 +9716,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -9727,7 +9735,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = brave.syang.local.id.ReadInPrivate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BSafes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -9820,11 +9828,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Beta;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Client/Entitlements/FennecApplication.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 866K689WP3;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_BASE_BUNDLE_ID = com.bsafes;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)",
@@ -9848,6 +9857,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MOZ_BUNDLE_DISPLAY_NAME = BSafes;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lxml2",
@@ -10057,7 +10067,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Fennec;
 		};
-		F736E02C239005A300A01A76 /* Build configuration list for PBXNativeTarget "ReadInPrivate" */ = {
+		F736E02C239005A300A01A76 /* Build configuration list for PBXNativeTarget "BSafes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F736E02D239005A300A01A76 /* Fennec */,
