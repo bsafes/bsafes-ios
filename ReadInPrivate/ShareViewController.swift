@@ -16,7 +16,7 @@ class ShareViewController: SLComposeServiceViewController {
     
     lazy var readLaterConfigurationItem: SLComposeSheetConfigurationItem = {
         let item = SLComposeSheetConfigurationItem()!
-        item.title = "Read Later"
+        item.title = "Read Later In Private"
         // item.value = "add"
         item.tapHandler = self.readLaterConfigurationItemTapped
 
@@ -34,8 +34,12 @@ class ShareViewController: SLComposeServiceViewController {
         defaults?.set(self.strTitle, forKey: "pageTitle")
         defaults?.set(self.pageUrl, forKey: "pageUrl")
         
-        readLaterConfigurationItem.title = "Added to Read Later!"
-        // self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
+        readLaterConfigurationItem.title = "Added to Private Reading List!"
+        
+        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { timer in
+            self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
+        })
+    //self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
     }
 
     override func isContentValid() -> Bool {

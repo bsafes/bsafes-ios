@@ -48,7 +48,7 @@ extension Preferences {
         /// Specifies whether the bookmark button is present on toolbar
         static let showBookmarkToolbarShortcut = Option<Bool>(key: "general.show-bookmark-toolbar-shortcut", default: UIDevice.isIpad)
         /// Sets Desktop UA for iPad by default (iOS 13+ & iPad only)
-        static let alwaysRequestDesktopSite = Option<Bool>(key: "general.always-request-desktop-site", default: UIDevice.isIpad)
+        static let alwaysRequestDesktopSite = Option<Bool>(key: "general.always-request-desktop-site", default: false /*UIDevice.isIpad*/)
         /// Whether or not a user has enabled Night Mode.
         ///
         /// Currently unused

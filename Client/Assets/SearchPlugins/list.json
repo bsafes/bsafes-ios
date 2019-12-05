@@ -2,15 +2,12 @@
   "allLocales": {
     "visibleDefaultEngines": [
       "duckduckgo", 
-      "qwant", 
-      "startpage",
       "google"
     ]
   }, 
   "default": {
-    "searchDefault": "Google", 
+    "searchDefault": "DuckDuckGo",
     "visibleDefaultEngines": [
-      "bing"
     ]
   }, 
   "locales": {  

@@ -377,12 +377,13 @@ class SettingsViewController: TableViewController {
         return Section(
             header: .title(Strings.Support),
             rows: [
+                /*
                 Row(text: Strings.Report_a_bug,
                     selection: { [unowned self] in
                         self.settingsDelegate?.settingsOpenURLInNewTab(BraveUX.BraveCommunityURL)
                         self.dismiss(animated: true)
                     },
-                    cellClass: MultilineButtonCell.self),
+                    cellClass: MultilineButtonCell.self),*/
                 Row(text: Strings.Rate_Brave,
                     selection: { [unowned self] in
                         // Rate Brave

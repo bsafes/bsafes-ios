@@ -51,7 +51,7 @@ class MenuViewController: UITableViewController {
     }
     
     private enum MenuButtons: Int, CaseIterable {
-        case settings, history, addToReadList, readList, bookmarks, downloads, add, share
+        case settings, history, readList, bookmarks, downloads, addToReadList, add, share
         
         var title: String {
             switch self {
@@ -62,7 +62,7 @@ class MenuViewController: UITableViewController {
             case .share: return Strings.ShareWithMenuItem
             case .downloads: return Strings.DownloadsMenuItem
             case .readList: return Strings.ReadListMenuItem
-            case .addToReadList: return Strings.AddToReadListMenuItem
+            case .addToReadList: return Strings.ReadLaterMenuItem
             }
         }
         
@@ -74,8 +74,8 @@ class MenuViewController: UITableViewController {
             case .add: return #imageLiteral(resourceName: "menu-add-bookmark").template
             case .share: return #imageLiteral(resourceName: "nav-share").template
             case .downloads: return #imageLiteral(resourceName: "menu-downloads").template
-            case .readList: return  #imageLiteral(resourceName: "nav-share").template
-            case .addToReadList: return  #imageLiteral(resourceName: "nav-share").template
+            case .readList: return  #imageLiteral(resourceName: "nav-menu").template
+            case .addToReadList: return  #imageLiteral(resourceName: "add_tab").template
             }
         }
     }
