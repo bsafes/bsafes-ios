@@ -64,7 +64,7 @@ public struct UIConstants {
     static let PasscodeDotColor = BraveUX.GreyG
   
     // Brave Orange
-    static let ControlTintColor = BraveUX.BraveOrange
+    static let ControlTintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)//BraveUX.BraveOrange
   
     // settings
     static let TableViewHeaderBackgroundColor = BraveUX.GreyA

@@ -65,12 +65,23 @@ public final class ReadList: NSManagedObject, WebsitePresentable, CRUD {
         let defaults = UserDefaults(suiteName: "group.brave.mac.local.id")
         let title = defaults?.string(forKey: "pageTitle")
         
-        if title != nil {
-            let url = (defaults?.url(forKey: "pageUrl"))!
-            self.add(title!, url: url)
-            defaults?.set(nil, forKey: "pageTitle")
-        } else {
-            print("eid_no")
+
+        if let readingList = defaults?.array(forKey: "bsafesReadingList") as? [[String: Any]] {
+            print(readingList)
+            for item in readingList {
+                print(item["pageTitle"] as! String)
+                let title = item["pageTitle"]
+                let encodedData = item["pageUrl"] as! Data
+                if title != nil {
+                    let url = NSKeyedUnarchiver.unarchiveObject(with: encodedData) as! URL
+                    self.add(title as! String, url: url)
+                    defaults?.set(nil, forKey: "pageTitle")
+                    
+                } else {
+                    print("eid_no")
+                }
+            }
+            defaults?.set(nil, forKey: "bsafesReadingList")
         }
         
         let fetchRequest = NSFetchRequest<ReadList>()

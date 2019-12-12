@@ -26,14 +26,20 @@ class ShareViewController: SLComposeServiceViewController {
     func readLaterConfigurationItemTapped () {
         print("read Later tapped.")
         
-//        ReadList.add(self.strTitle, url: self.pageUrl!)
-//        DispatchQueue.main.async {
-//            ReadList.add(self.strTitle, url: self.pageUrl!)
-//        }
         let defaults = UserDefaults(suiteName: "group.brave.mac.local.id")
-        defaults?.set(self.strTitle, forKey: "pageTitle")
-        defaults?.set(self.pageUrl, forKey: "pageUrl")
-        
+
+        // Test writing array to UserDefaults
+        if var readingList = defaults?.array(forKey: "bsafesReadingList") as? [[String: Any]] {
+            print(readingList)
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: self.pageUrl)
+            readingList.append(["pageTitle": self.strTitle, "pageUrl": encodedData])
+            defaults?.set(readingList, forKey: "bsafesReadingList" )
+        } else {
+            var readingList: [[String: Any]] = []
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: self.pageUrl)
+            readingList.append(["pageTitle": self.strTitle, "pageUrl": encodedData])
+            defaults?.set(readingList, forKey: "bsafesReadingList" )
+        }
         readLaterConfigurationItem.title = "Added to Private Reading List!"
         
         _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { timer in

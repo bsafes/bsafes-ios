@@ -32,7 +32,8 @@ class OnboardingSearchEnginesViewController: OnboardingViewController {
         contentView.searchEnginesTable.dataSource = self
         contentView.searchEnginesTable.delegate = self
         
-        contentView.continueButton.addTarget(self, action: #selector(continueTapped), for: .touchDown)
+        //contentView.continueButton.addTarget(self, action: #selector(continueTapped), for: .touchDown)
+        contentView.continueButton.addTarget(self, action: #selector(skipTapped), for: .touchDown)
         contentView.skipButton.addTarget(self, action: #selector(skipTapped), for: .touchDown)
         
         // This is kind of stupid, but for some reason the table's background color will not

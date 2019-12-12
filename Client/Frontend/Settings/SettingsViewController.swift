@@ -110,17 +110,17 @@ class SettingsViewController: TableViewController {
         list.append(generalSection)
         list.append(displaySection)
         #if !NO_SYNC
-            list.append(syncSection)
+           /* list.append(syncSection)*/
         #endif
         list.append(contentsOf: [privacySection,
                                  securitySection,
-                                 shieldsSection,
-                                 supportSection,
-                                 aboutSection])
+                                 shieldsSection
+                                 /*supportSection,
+                                 aboutSection*/])
         
-        if let debugSection = debugSection {
+       /* if let debugSection = debugSection {
             list.append(debugSection)
-        }
+        }*/
 
         return list
     }

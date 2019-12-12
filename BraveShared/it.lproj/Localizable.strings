@@ -11,7 +11,7 @@
 "OBSearchEngineDetail" = "Scegli il tuo motore di ricerca predefinito";
 
 /* Title for search engine onboarding screen */
-"OBSearchEngineTitle" = "Welcome to BSafes Private ...";
+"OBSearchEngineTitle" = "Welcome to BSafes";
 
 /* Detail text for shields onboarding screen */
 "OBShieldsDetail" = "Difendi la tua privacy bloccando i tracker, per navigare senza che nessuno tracci la tua attività sul web";

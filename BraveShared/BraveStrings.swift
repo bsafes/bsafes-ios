@@ -451,7 +451,7 @@ extension Strings {
     public static let Block_Popups = NSLocalizedString("BlockPopups", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Block Popups", comment: "Setting to enable popup blocking")
     public static let Show_Tabs_Bar = NSLocalizedString("ShowTabsBar", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Show Tabs Bar", comment: "Setting to show/hide the tabs bar")
     public static let Private_Browsing_Only = NSLocalizedString("PrivateBrowsingOnly", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Private Browsing Only", comment: "Setting to keep app in private mode")
-    public static let Brave_Shield_Defaults = NSLocalizedString("BraveShieldDefaults", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Brave Shield Defaults", comment: "Section title for adbblock, tracking protection, HTTPS-E, and cookies")
+    public static let Brave_Shield_Defaults = NSLocalizedString("BraveShieldDefaults", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Security Defaults", comment: "Section title for adbblock, tracking protection, HTTPS-E, and cookies")
     public static let Block_Ads_and_Tracking = NSLocalizedString("BlockAdsAndTracking", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Block Ads & Tracking", comment: "")
     public static let HTTPS_Everywhere = NSLocalizedString("HTTPSEverywhere", tableName: "BraveShared", bundle: Bundle.braveShared, value: "HTTPS Everywhere", comment: "")
     public static let Block_Phishing_and_Malware = NSLocalizedString("BlockPhishingAndMalware", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Block Phishing and Malware", comment: "")
@@ -491,7 +491,7 @@ extension Strings {
     public static let Scripts_Blocked = NSLocalizedString("ScriptsBlocked", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Scripts Blocked", comment: "individual blocking statistic title")
     public static let Fingerprinting_Methods = NSLocalizedString("FingerprintingMethods", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Fingerprinting Methods", comment: "individual blocking statistic title")
     public static let Fingerprinting_Protection_wrapped = NSLocalizedString("FingerprintingnProtection", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Fingerprinting\nProtection", comment: "blocking stat title")
-    public static let Shields_Overview = NSLocalizedString("ShieldsOverview", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Site Shields allow you to control when ads and trackers are blocked for each site that you visit. If you prefer to see ads on a specific site, you can enable them here.", comment: "shields overview message")
+    public static let Shields_Overview = NSLocalizedString("ShieldsOverview", tableName: "BraveShared", bundle: Bundle.braveShared, value: "AdBlock allow you to control when ads and trackers are blocked for each site that you visit. If you prefer to see ads on a specific site, you can enable them here.", comment: "shields overview message")
     public static let Shields_Overview_Footer = NSLocalizedString("ShieldsOverviewFooter", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Note: Some sites may require scripts to work properly so this shield is turned off by default.", comment: "shields overview footer message")
     public static let Use_regional_adblock = NSLocalizedString("UseRegionalAdblock", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Use regional adblock", comment: "Setting to allow user in non-english locale to use adblock rules specifc to their language")
     public static let Browser_lock_callout_title = NSLocalizedString("BrowserLockCalloutTitle", tableName: "BraveShared", bundle: Bundle.braveShared, value: "Private means private.", comment: "Browser Lock feature callout title.")
@@ -547,11 +547,11 @@ extension Strings {
 // MARK: - Onboarding
 extension Strings {
     public static let OBContinueButton = NSLocalizedString("OnboardingContinueButton", bundle: Bundle.braveShared, value: "Continue", comment: "Continue button to navigate to next onboarding screen.")
-    public static let OBSkipButton = NSLocalizedString("OnboardingSkipButton", bundle: Bundle.braveShared, value: "Skip", comment: "Skip button to skip onboarding and start using the app.")
-    public static let OBSaveButton = NSLocalizedString("OBSaveButton", bundle: Bundle.braveShared, value: "Save", comment: "Save button to save current selection")
+    public static let OBSkipButton = NSLocalizedString("OnboardingSkipButton", bundle: Bundle.braveShared, value: "   ", comment: "Skip button to skip onboarding and start using the app.")
+    public static let OBSaveButton = NSLocalizedString("OBSaveButton", bundle: Bundle.braveShared, value: "Continue", comment: "Save button to save current selection")
     public static let OBFinishButton = NSLocalizedString("OBFinishButton", bundle: Bundle.braveShared, value: "Start browsing", comment: "Button to finish onboarding and start using the app.")
-    public static let OBSearchEngineTitle = NSLocalizedString("OBSearchEngineTitle", bundle: Bundle.braveShared, value: "Welcome to BSafes Private ...", comment: "Title for search engine onboarding screen")
-    public static let OBSearchEngineDetail = NSLocalizedString("OBSearchEngineDetail", bundle: Bundle.braveShared, value: "Select your default search engine", comment: "Detail text for search engine onboarding screen")
+    public static let OBSearchEngineTitle = NSLocalizedString("OBSearchEngineTitle", bundle: Bundle.braveShared, value: "Welcome to BSafes", comment: "Title for search engine onboarding screen")
+    public static let OBSearchEngineDetail = NSLocalizedString("OBSearchEngineDetail", bundle: Bundle.braveShared, value: "Your Private Reading List, with AdBlokcer & private search engine", comment: "Detail text for search engine onboarding screen")
     public static let OBShieldsTitle = NSLocalizedString("OBShieldsTitle", bundle: Bundle.braveShared, value: "Brave Shields", comment: "Title for shields onboarding screen")
     public static let OBShieldsDetail = NSLocalizedString("OBShieldsDetail", bundle: Bundle.braveShared, value: "Block privacy-invading trackers so you can browse without being followed around the web", comment: "Detail text for shields onboarding screen")
 }

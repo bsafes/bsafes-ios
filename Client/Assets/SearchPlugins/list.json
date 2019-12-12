@@ -1,8 +1,7 @@
 {
   "allLocales": {
     "visibleDefaultEngines": [
-      "duckduckgo", 
-      "google"
+        "duckduckgo"
     ]
   }, 
   "default": {
