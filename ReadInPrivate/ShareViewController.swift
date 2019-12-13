@@ -40,7 +40,7 @@ class ShareViewController: SLComposeServiceViewController {
             readingList.append(["pageTitle": self.strTitle, "pageUrl": encodedData])
             defaults?.set(readingList, forKey: "bsafesReadingList" )
         }
-        readLaterConfigurationItem.title = "Added to Private Reading List!"
+        readLaterConfigurationItem.title = "Added to Reading List!"
         
         _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { timer in
             self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)

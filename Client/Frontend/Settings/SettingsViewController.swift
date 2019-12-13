@@ -114,9 +114,9 @@ class SettingsViewController: TableViewController {
         #endif
         list.append(contentsOf: [privacySection,
                                  securitySection,
-                                 shieldsSection
-                                 /*supportSection,
-                                 aboutSection*/])
+                                 shieldsSection,
+                                 //supportSection
+                                 aboutSection])
         
        /* if let debugSection = debugSection {
             list.append(debugSection)
@@ -377,13 +377,13 @@ class SettingsViewController: TableViewController {
         return Section(
             header: .title(Strings.Support),
             rows: [
-                /*
+                
                 Row(text: Strings.Report_a_bug,
                     selection: { [unowned self] in
                         self.settingsDelegate?.settingsOpenURLInNewTab(BraveUX.BraveCommunityURL)
                         self.dismiss(animated: true)
                     },
-                    cellClass: MultilineButtonCell.self),*/
+                    cellClass: MultilineButtonCell.self),
                 Row(text: Strings.Rate_Brave,
                     selection: { [unowned self] in
                         // Rate Brave
@@ -432,6 +432,14 @@ class SettingsViewController: TableViewController {
                     actionSheet.addAction(UIAlertAction(title: Strings.CancelButtonTitle, style: .cancel, handler: nil))
                     self.navigationController?.present(actionSheet, animated: true, completion: nil)
                 }, cellClass: MultilineValue1Cell.self)
+                ,
+                Row(text: Strings.Terms_of_Use,
+                    selection: { [unowned self] in
+                        // Show terms of use
+                        let toc = SettingsContentViewController().then { $0.url = BraveUX.BraveTermsOfUseURL }
+                        self.navigationController?.pushViewController(toc, animated: true)
+                    },
+                    accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)
             ]
         )
     }()

@@ -53,7 +53,6 @@ class ShieldsViewController: UIViewController, PopoverContentComponent {
         shieldControlMapping.forEach { shield, view, option in
             
             // Updating based on global settings
-            
             if let option = option {
                 // Sets the default setting
                 view.toggleSwitch.isOn = option.value

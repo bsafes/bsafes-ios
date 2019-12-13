@@ -65,6 +65,7 @@ extension ShieldsViewController {
         
         // MARK: - Themeable
         func applyTheme(_ theme: Theme) {
+            
             styleChildren(theme: theme)
             
             backgroundColor = theme.colors.home

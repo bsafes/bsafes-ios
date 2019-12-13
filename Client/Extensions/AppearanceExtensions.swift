@@ -13,13 +13,13 @@ extension Theme {
         // important! for privacy concerns, otherwise UI can bleed through
         UIView.appearance(whenContainedInInstancesOf: [BasePasscodeViewController.self]).appearanceBackgroundColor = colors.home
         
-        UIToolbar.appearance().tintColor = colors.accent
+        UIToolbar.appearance().tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) //colors.accent
         UIToolbar.appearance().backgroundColor = colors.footer
         
-        UINavigationBar.appearance().tintColor = colors.accent
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)//colors.accent
         UINavigationBar.appearance().appearanceBarTintColor = colors.header
         
-        UISwitch.appearance().onTintColor = colors.accent
+        UISwitch.appearance().onTintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)//colors.accent
         
         // This is a subtle "abuse" of theme colors
         // In order to properly style things, `addressBar` has been utilized to offer contrast to `home`/`header`, as many of the themes utilize similar colors.
@@ -37,7 +37,7 @@ extension Theme {
         UITableView.appearance().appearanceBackgroundColor = tablePrimaryColor
         UITableView.appearance().appearanceSeparatorColor = colors.border.withAlphaComponent(colors.transparencies.borderAlpha)
         
-        UITableViewCell.appearance().tintColor = colors.accent
+        UITableViewCell.appearance().tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)//colors.accent
         UITableViewCell.appearance().backgroundColor = tableSecondaryColor
 
         UIView.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).appearanceBackgroundColor = tablePrimaryColor
