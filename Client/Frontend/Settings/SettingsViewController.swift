@@ -115,7 +115,7 @@ class SettingsViewController: TableViewController {
         list.append(contentsOf: [privacySection,
                                  securitySection,
                                  shieldsSection,
-                                 //supportSection
+                                 supportSection,
                                  aboutSection])
         
        /* if let debugSection = debugSection {
@@ -384,7 +384,7 @@ class SettingsViewController: TableViewController {
                         self.dismiss(animated: true)
                     },
                     cellClass: MultilineButtonCell.self),
-                Row(text: Strings.Rate_Brave,
+                /*Row(text: Strings.Rate_Brave,
                     selection: { [unowned self] in
                         // Rate Brave
                         guard let writeReviewURL = URL(string: "https://itunes.apple.com/app/id1052879175?action=write-review")
@@ -392,7 +392,7 @@ class SettingsViewController: TableViewController {
                         UIApplication.shared.open(writeReviewURL)
                         self.dismiss(animated: true)
                     },
-                    cellClass: MultilineValue1Cell.self),
+                    cellClass: MultilineValue1Cell.self),*/
                 Row(text: Strings.Privacy_Policy,
                     selection: { [unowned self] in
                         // Show privacy policy
@@ -433,13 +433,21 @@ class SettingsViewController: TableViewController {
                     self.navigationController?.present(actionSheet, animated: true, completion: nil)
                 }, cellClass: MultilineValue1Cell.self)
                 ,
-                Row(text: Strings.Terms_of_Use,
+                Row(text: Strings.SettingsLicenses,
                     selection: { [unowned self] in
                         // Show terms of use
+                        /*
                         let toc = SettingsContentViewController().then { $0.url = BraveUX.BraveTermsOfUseURL }
                         self.navigationController?.pushViewController(toc, animated: true)
                     },
-                    accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)
+                    accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self)*/
+                        guard let url = URL(string: WebServer.sharedInstance.base) else { return }
+                        
+                        let licenses = SettingsContentViewController().then {
+                            $0.url = url.appendingPathComponent("about").appendingPathComponent("license")
+                        }
+                        self.navigationController?.pushViewController(licenses, animated: true)
+                        }, accessory: .disclosureIndicator)
             ]
         )
     }()

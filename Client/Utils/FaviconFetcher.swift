@@ -41,7 +41,7 @@ open class FaviconFetcher: NSObject, XMLParserDelegate {
         return FaviconFetcher.getDefaultIcons()
     }()
 
-    static let multiRegionDomains = ["craigslist", "google", "amazon"]
+    static let multiRegionDomains = ["craigslist"/*, "google", "amazon"*/]
 
     class func getDefaultIconForURL(url: URL) -> (color: UIColor, url: String)? {
         // Problem: Sites like amazon exist with .ca/.de and many other tlds.
