@@ -62,7 +62,7 @@ public final class ReadList: NSManagedObject, WebsitePresentable, CRUD {
 
     public class func frc() -> NSFetchedResultsController<ReadList> {
         
-        let defaults = UserDefaults(suiteName: "group.brave.mac.local.id")
+        let defaults = UserDefaults(suiteName: "group.bsafes.mac.local.id")
         let title = defaults?.string(forKey: "pageTitle")
         
 

@@ -16,7 +16,7 @@ class ShareViewController: SLComposeServiceViewController {
     
     lazy var readLaterConfigurationItem: SLComposeSheetConfigurationItem = {
         let item = SLComposeSheetConfigurationItem()!
-        item.title = "Read Later In Private"
+        item.title = "Read Later in Private"
         // item.value = "add"
         item.tapHandler = self.readLaterConfigurationItemTapped
 
@@ -26,7 +26,7 @@ class ShareViewController: SLComposeServiceViewController {
     func readLaterConfigurationItemTapped () {
         print("read Later tapped.")
         
-        let defaults = UserDefaults(suiteName: "group.brave.mac.local.id")
+        let defaults = UserDefaults(suiteName: "group.bsafes.mac.local.id")
 
         // Test writing array to UserDefaults
         if var readingList = defaults?.array(forKey: "bsafesReadingList") as? [[String: Any]] {
